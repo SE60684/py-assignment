@@ -4,8 +4,6 @@ from utils import header_utils
 import jwt
 
 
-
-
 def require_authenticate(request):
     path = request.path
     for item in settings.JWT_NOT_REQUIRE_AUTHENTICATE:
@@ -22,7 +20,7 @@ def validate_token(token):
         return False
 
 
-def simple_middleware(get_response):
+def jwt_middleware(get_response):
     # One-time configuration and initialization.
     def middleware(request):
         # Code to be executed for each request before
