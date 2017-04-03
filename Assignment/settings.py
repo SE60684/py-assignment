@@ -127,4 +127,4 @@ JWT_NOT_REQUIRE_AUTHENTICATE = ['/authenticate',]
 JWT_SECRET_KEY = 'jwt_secret_key'
 JWT_ALGORITHM = 'HS256'
 
-MONGOBD_ALIAS = 'test'
+MONGOBD_ALIAS = 'test01'
